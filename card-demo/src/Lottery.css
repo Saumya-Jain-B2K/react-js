@@ -1,0 +1,98 @@
+/* Ticket container */
+.ticket {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 1.5rem 0;
+}
+
+/* Individual ticket number */
+.ticket-num {
+  width: 45px;
+  height: 45px;
+  background: #f3f4f6;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.lottery-container {
+  max-width: 400px;
+  margin: 9rem auto;
+  padding: 1.5rem;
+  background: #a2a2be;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(18, 16, 16, 0.1);
+  text-align: center;
+  box-shadow:
+    0 0 15px rgba(99, 102, 241, 0.4),
+    0 0 30px rgba(99, 102, 241, 0.3),
+    0 0 45px rgba(99, 102, 241, 0.2);
+}
+
+.win {
+  animation: winGlow 1.8s infinite alternate;
+}
+
+@keyframes winGlow {
+  from {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
+  }
+  to {
+    box-shadow: 0 0 45px rgba(34, 197, 94, 0.9);
+  }
+}
+
+
+/* Hover effect on numbers */
+.ticket-num:hover {
+  transform: scale(1.1);
+  background: #e0e7ff;
+}
+
+.win .ticket-num {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.6);
+}
+
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #1e3a8a;
+}
+
+.btn{
+    display: block;
+    margin: 1rem auto;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2563eb;
+  animation: glowPulse 1.2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from {
+    box-shadow: 0 0 6px #2563eb;
+  }
+  to {
+    box-shadow: 0 0 14px #2563eb,
+                0 0 28px rgba(37, 99, 235, 0.7);
+  }
+}

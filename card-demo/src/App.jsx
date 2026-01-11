@@ -1,5 +1,8 @@
 import './App.css'
+import Lottery from './Lottery'
 import ProductTab from './ProductTab'
+import Ticket from './Ticket'
+import TicketNum from './TicketNum'
 import TodoList from './TodoList'
 
 function App() {
@@ -14,7 +17,8 @@ function App() {
     // <ProductTab />
     // </div>
     <>
-    <TodoList /></>
+    <Lottery n={3} winningSum={17}/>
+    </>
   )
 }
 
